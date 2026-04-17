@@ -1,0 +1,235 @@
+<mxfile host="drawio-plugin" modified="2025-02-12T18:36:47.345Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="do5OprzteS4Pg-y51cAP" version="22.1.22" type="embed">
+  <diagram id="-ceNhr4acp4sju5FBRwZ" name="Página-1">
+    <mxGraphModel dx="1244" dy="1162" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="34" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;AccountRole&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
+          <mxGeometry x="222" y="-275" width="140" height="120" as="geometry">
+            <mxRectangle x="674" y="140" width="109" height="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" value="&lt;p style=&quot;line-height: 160%;&quot;&gt;- &lt;b&gt;ADMIN&lt;/b&gt;: String&lt;br&gt;- &lt;b&gt;FREE&lt;/b&gt;: String&lt;br&gt;- &lt;b&gt;BASIC&lt;/b&gt;: String&lt;br&gt;- &lt;b&gt;BUSINESS&lt;/b&gt;: String&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-8;" parent="34" vertex="1">
+          <mxGeometry y="30" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="&lt;b&gt;FileMetadata&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="1018" y="548" width="218" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="&lt;p style=&quot;line-height: 140%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;creation_date&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;entropy&lt;/b&gt; : Double&lt;br&gt;- &lt;b&gt;mime_type&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;cha1&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;cha224&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;cha256&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;cha3_256&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;cha3_512&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;cha384&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;cha512&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;size&lt;/b&gt; : Long&lt;br&gt;- &lt;b&gt;users&lt;/b&gt; : Set&lt;br&gt;&lt;/p&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=none;spacingTop=-7;spacingBottom=-4;" parent="39" vertex="1">
+          <mxGeometry y="30" width="218" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="&lt;b&gt;FileAnalisys&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="1019" y="828" width="220" height="119" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="55" value="&lt;p style=&quot;line-height: 150%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;yara_math_status&lt;/b&gt; : YaraMathStatus&lt;br&gt;- &lt;b&gt;yara_namespace&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;yara_rule&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-7;spacingBottom=0;" parent="54" vertex="1">
+          <mxGeometry y="30" width="220" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="&lt;b&gt;Account&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="-143" width="310" height="344" as="geometry" />
+        </mxCell>
+        <mxCell id="67" value="&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;name&lt;/b&gt; : String&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;profile&lt;/b&gt; : String&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- &lt;b&gt;email&lt;/b&gt; : String&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;password&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;accountRole&lt;/b&gt; : AccountRole&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;emailConfirmation&lt;/b&gt; : EmailConfirmation&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;emailForgotPassword&lt;/b&gt; : Set&amp;lt;EmailForgotPassword&amp;gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;userFileAssociations&lt;/b&gt; : Set&amp;lt;UserFilesAssociations&amp;gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;files&lt;/b&gt; : Set&amp;lt;UserFile&amp;gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;rateLimit&lt;/b&gt;: Double&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;currentConsumption&lt;/b&gt;: Double&lt;/p&gt;&lt;p style=&quot;line-height: 90%;&quot;&gt;- &lt;b&gt;resetDate&lt;/b&gt;: LocalDateTime&lt;/p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-3;fillColor=none;" parent="66" vertex="1">
+          <mxGeometry y="30" width="310" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="68" value="&lt;b&gt;EmailConfirmation&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="417" y="222" width="180" height="120" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="69" value="&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;enabled &lt;/b&gt;: Boolean&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- &lt;b&gt;token&lt;/b&gt;&amp;nbsp;: String&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- &lt;b&gt;expiresAt&lt;/b&gt;&amp;nbsp;: String&amp;nbsp;&lt;/span&gt;&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=0;" parent="68" vertex="1">
+          <mxGeometry y="30" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="&lt;b&gt;EmailForgotPassword&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="417" y="372" width="180" height="140" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="73" value="&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;oldPassword&lt;/b&gt; : String&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;token&lt;/b&gt; : String&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- &lt;b&gt;expireAt&lt;/b&gt; : Integer&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;account&lt;/b&gt; : Account&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=0;" parent="72" vertex="1">
+          <mxGeometry y="30" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="66" target="72" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="264" y="154" />
+              <mxPoint x="264" y="442" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="66" target="68" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="293" y="129" />
+              <mxPoint x="293" y="281" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;YaraMachStatus&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
+          <mxGeometry x="1273" y="728" width="140" height="100" as="geometry">
+            <mxRectangle x="634" y="718" width="128" height="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78" value="&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;BENIGN&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;MALICIOUS&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;NONE&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-2;" parent="77" vertex="1">
+          <mxGeometry y="30" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="85" value="&lt;b&gt;UserFileAssociation&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="419.5" y="542" width="180" height="106" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="86" value="&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;-&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;account&lt;/b&gt;: Account&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;file&lt;/b&gt;&amp;nbsp;: File&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=0;" parent="85" vertex="1">
+          <mxGeometry y="30" width="180" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="90" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="85" target="66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="233" y="595" />
+              <mxPoint x="233" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;exitX=0;exitY=1.014;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="78" target="54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="35" target="66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="522" as="sourcePoint" />
+            <mxPoint x="347" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="109" target="145" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="933" y="1026" />
+              <mxPoint x="933" y="714" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="109" value="&lt;b&gt;FileClamavRule&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="1018" y="968" width="220" height="116" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="110" value="&lt;p style=&quot;line-height: 150%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;br&gt;- &lt;b&gt;virmane&lt;/b&gt;&amp;nbsp;: String&lt;br&gt;-&amp;nbsp;&lt;b&gt;math_status&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;: MathStatus&lt;/span&gt;&lt;br&gt;- &lt;b&gt;code_analysis&lt;/b&gt;&amp;nbsp;: String&lt;br&gt;&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-7;spacingBottom=0;" parent="109" vertex="1">
+          <mxGeometry y="30" width="220" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;MachStatus&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
+          <mxGeometry x="1273" y="868" width="140" height="100" as="geometry">
+            <mxRectangle x="634" y="718" width="128" height="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="113" value="&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;BENIGN&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;MALICIOUS&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;NONE&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-2;" parent="112" vertex="1">
+          <mxGeometry y="30" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="114" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;exitX=0.01;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="113" target="109" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1257" y="1465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;" edge="1" parent="1" source="117" target="127">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="1197" />
+              <mxPoint x="1290" y="1142" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="117" value="&lt;b&gt;MACHO&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="1306" y="1168" width="220" height="58" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;" edge="1" parent="1" source="119" target="127">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1247" y="1125" />
+              <mxPoint x="1247" y="1125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="119" value="&lt;b&gt;DEX&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="1306" y="1096" width="220" height="57" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="120" value="&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-7;spacingBottom=0;" parent="119" vertex="1">
+          <mxGeometry y="30" width="220" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;" edge="1" parent="1" source="121" target="127">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1278" y="1272" />
+              <mxPoint x="1278" y="1161" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="121" value="&lt;b&gt;PE&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="1306" y="1241" width="222" height="62" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="154" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;endArrow=ERone;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="127" target="145" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="919" y="1164" />
+              <mxPoint x="919" y="734" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="127" value="&lt;b&gt;Parser&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="1017" y="1096" width="220" height="135" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="128" value="&lt;p style=&quot;line-height: 50%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;line-height: 50%;&quot;&gt;- &lt;b&gt;dex&lt;/b&gt; : Dex&lt;/p&gt;&lt;p style=&quot;line-height: 50%;&quot;&gt;- &lt;b&gt;mach-o&lt;/b&gt; : Mach-o&lt;/p&gt;&lt;p style=&quot;line-height: 50%;&quot;&gt;- &lt;b&gt;elf&lt;/b&gt; : Elf&lt;/p&gt;&lt;p style=&quot;line-height: 50%;&quot;&gt;- &lt;b&gt;pe&lt;/b&gt; : Pe&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=-7;spacingBottom=0;" parent="127" vertex="1">
+          <mxGeometry y="30" width="220" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="148" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERoneToMany;endFill=0;edgeStyle=orthogonalEdgeStyle;startArrow=ERone;startFill=0;" parent="1" source="145" target="85" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="667" y="595" />
+              <mxPoint x="667" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="145" value="&lt;b&gt;File&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" parent="1" vertex="1">
+          <mxGeometry x="693" y="539" width="193" height="284" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="146" value="&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;id&lt;/b&gt; : String&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;serial&lt;/b&gt; : String&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;- &lt;b&gt;name : &lt;/b&gt;String&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- is_private : &lt;/b&gt;Boolean&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- description : &lt;/b&gt;String&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- signature : &lt;/b&gt;String&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- tags : &lt;/b&gt;List&amp;lt;String&amp;gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- owner : &lt;/b&gt;String&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- metadata : &lt;/b&gt;FileMetadata&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- analysis : &lt;/b&gt;FileAnalysis&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- clamav_rule : &lt;/b&gt;FileClamavRule&lt;/p&gt;&lt;p style=&quot;line-height: 60%;&quot;&gt;&lt;b&gt;- parser : &lt;/b&gt;Parser&lt;/p&gt;" style="text;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;spacingTop=0;" parent="145" vertex="1">
+          <mxGeometry y="30" width="193" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="54" target="145" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="946" y="888" />
+              <mxPoint x="946" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="39" target="145" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="979" y="669" />
+              <mxPoint x="979" y="669" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;" edge="1" parent="1" source="160" target="127">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1265" y="1353" />
+              <mxPoint x="1265" y="1180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="160" value="&lt;b&gt;ELF&lt;br&gt;&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="1306" y="1322" width="222" height="62" as="geometry">
+            <mxRectangle x="380" y="585" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

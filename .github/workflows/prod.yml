@@ -1,0 +1,40 @@
+name: Deploy Application
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Build project with Maven
+        run: mvn package
+      - name: Login Docker Hub
+        run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
+      - name: Build docker image
+        run: docker build -t maldeclabs/spider .
+      - name: Push image docker
+        run: docker push maldeclabs/spider
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Login Docker Hub
+        run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
+      - name: Pull image from docker hub
+        run: docker pull maldeclabs/spider:latest
+      - name: Remove docker container
+        run: docker rm -f spider
+      - name: Run docker container
+        run: docker run -d --net prod --ip 172.18.0.24 -p 127.0.0.1:8080:8080 --volume /build/:/build/ -e DATABASE_USERNAME=${{secrets.DATABASE_USERNAME}} -e DATABASE_PASSWORD='${{secrets.DATABASE_PASSWORD}}' -e DATABASE_URL=${{secrets.DATABASE_URL}} --name spider maldeclabs/spider mvn spring-boot:run
+
