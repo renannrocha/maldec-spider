@@ -4,9 +4,10 @@
     <img alt="home page spider" src="./.github/assets/bannersmaldec.png">
 </picture>
 
-A MalDec Labs era uma plataforma online especializada em análise de malware. Seu principal objetivo era fornecer uma ferramenta de análise de arquivos suspeitos enviados pelos usuários para determinar se contêm ameaças.
+MalDec Labs was an online platform specialized in malware analysis. Its main objective was to provide a tool for analyzing suspicious files submitted by users to determine whether they contain threats.
 
-Através do MalDec Engine (uma inteligência artificial desenvolvida pela MalDec Labs), ele analisava esses arquivos e fornecia informações detalhadas sobre sua natureza e seu potencial risco. Além disso, a plataforma oferecia opções de planos de assinatura e um Marketplace para compra e venda de análises. Em resumo, o MalDec era uma ferramenta essencial para a segurança cibernética, ajudando a proteger sistemas e redes contra ameaças digitais.
+Through the MalDec Engine (an artificial intelligence developed by MalDec Labs), it analyzed these files and provided detailed information about their nature and potential risk. In addition, the platform offered subscription plans and a Marketplace for buying and selling analyses. In summary, MalDec was an essential tool for cybersecurity, helping to protect systems and networks against digital threats.
 
-## Descrição geral do projeto
-O Spider é a aplicação RESTful que é responsável por todos os serviços de back-end do website da MalDec Labs.
+## Project Overview
+
+Spider is the RESTful application responsible for all backend services of the MalDec Labs website.
