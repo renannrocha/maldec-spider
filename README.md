@@ -11,3 +11,5 @@ Through the MalDec Engine (an artificial intelligence developed by MalDec Labs),
 ## Project Overview
 
 Spider is the RESTful application responsible for all backend services of the MalDec Labs website.
+
+> The project was discontinued due to a lack of funding and investments
